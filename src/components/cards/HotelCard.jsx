@@ -46,7 +46,7 @@ const HotelCard = (props) => {
             <div className="mt-1.5 sm:mt-0">
               <p className="text-gray-500">Parking</p>
 
-              <p className="font-medium">2 spaces</p>
+              <p className="font-medium">1 spaces</p>
             </div>
           </div>
 
