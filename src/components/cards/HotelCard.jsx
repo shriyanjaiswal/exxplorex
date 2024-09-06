@@ -1,6 +1,4 @@
-import HotelRoomImage from "../../assets/images/hotel-room.jpg";
-
-const HotelCard = () => {
+const HotelCard = (props) => {
   return (
     <a
       href="#"
@@ -8,7 +6,8 @@ const HotelCard = () => {
     >
       <img
         alt="hotel room image"
-        src={HotelRoomImage}
+        // eslint-disable-next-line react/prop-types
+        src={props.imageUrl}
         className="h-56 w-full rounded-lg object-cover hover:scale-105 transition-transform"
       />
 
@@ -23,7 +22,7 @@ const HotelCard = () => {
           <div>
             <dt className="sr-only">Address</dt>
 
-            <dd className="font-medium">123 Wallaby Avenue, Park Road</dd>
+            <dd className="font-medium text-gray-700">{props.address}</dd>
           </div>
         </dl>
 
